@@ -1,6 +1,6 @@
 import DateTimePicker from "@react-native-community/datetimepicker";
 import React, { useEffect, useState } from "react";
-import { StyleSheet, View, TouchableOpacity } from "react-native";
+import { StyleSheet, View, TouchableOpacity, Image } from "react-native";
 import { SelectList } from "react-native-dropdown-select-list"
 
 import { Text } from "react-native-paper"
@@ -183,5 +183,10 @@ const styles = StyleSheet.create({
 
   dropdownTextStyle: {
     color: "#BBBBBB",
+  },
+
+  arrow: {
+    width: 20,
+    height: 20,
   },
 });
