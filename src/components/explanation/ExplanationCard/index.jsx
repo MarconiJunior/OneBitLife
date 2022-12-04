@@ -53,7 +53,7 @@ export default function react() {
                     style={styles.icon}
                 />
                 <Text style={styles.description}>
-                    <Text style={styles.fun}>Felicidade: </Text> Hábitos para controlar
+                    <Text style={styles.fun}>Humor: </Text> Hábitos para controlar
                     o stress {"\n"}e aumentar a sua felicidade
                 </Text>
             </View>
