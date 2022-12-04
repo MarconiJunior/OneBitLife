@@ -25,6 +25,8 @@ export default function Home( {route} ) {
         navigation.navigate("AppExplanation");
     }
 
+    const excludeArea = route.params?.excludeArea;
+
     useEffect(() => {
 
         HabitsService.findByArea("Mente").then((mind) => {
@@ -39,6 +41,21 @@ export default function Home( {route} ) {
         HabitsService.findByArea("Humor").then((fun) => {
             setMindHabit(fun[0])
         });
+
+        if (excludeArea) {
+            if (excludeArea == "Mente") {
+                setMindHabit(null);
+            }
+            if (excludeArea == "Financeiro") {
+                setMindHabit(null);
+            }
+            if (excludeArea == "Corpo") {
+                setMindHabit(null);
+            }
+            if (excludeArea == "Humor") {
+                setMindHabit(null);
+            }
+        }
         ChangeNavigationService.checkShowHome(1)
         .then((showHome) => {
           const formDate = `${today.getFullYear()}-${today.getMonth()}-${today.getDate()}`;
