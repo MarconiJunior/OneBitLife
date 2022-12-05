@@ -10,6 +10,7 @@ import {
 
 import { useNavigation } from "@react-navigation/native";
 import HabitsService from "../../../services/HabitsService";
+import NotificationService from "../../../services/NotificationService";
 
 export default function UpdateExcludeButtons({
   habitInput,
