@@ -24,7 +24,7 @@ export default function CreateHabit({ habitArea, borderColor }) {
                 Adicionar meta {habitArea === "Mente" ? "da" : "do"} {habitArea}
             </Text>
         </TouchableOpacity>
-    )
+    );
 
 }
 
