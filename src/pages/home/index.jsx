@@ -27,6 +27,7 @@ export default function Home( {route} ) {
 
     const excludeArea = route.params?.excludeArea;
 
+
     useEffect(() => {
 
         HabitsService.findByArea("Mente").then((mind) => {
