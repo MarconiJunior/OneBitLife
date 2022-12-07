@@ -16,7 +16,7 @@ export default function Home( {route} ) {
     const [mindHabit, setMindHabit] = useState();
     const [moneyHabit, setMoneyHabit] = useState();
     const [bodyHabit, setBodyHabit] = useState();
-    const [funHabit, setfunHabit] = useState();
+    const [funHabit, setFunHabit] = useState();
 
     const [robotDaysLife, setRobotDaysLife] = useState();
     const today = new Date();
@@ -33,13 +33,13 @@ export default function Home( {route} ) {
             setMindHabit(mind[0])
         });
         HabitsService.findByArea("Financeiro").then((money) => {
-            setMindHabit(money[0])
+            setMoneyHabit(money[0])
         });
         HabitsService.findByArea("Corpo").then((body) => {
-            setMindHabit(body[0])
+            setBodyHabit(body[0])
         });
         HabitsService.findByArea("Humor").then((fun) => {
-            setMindHabit(fun[0])
+            setFunHabit(fun[0])
         });
 
         if (excludeArea) {
@@ -47,13 +47,13 @@ export default function Home( {route} ) {
                 setMindHabit(null);
             }
             if (excludeArea == "Financeiro") {
-                setMindHabit(null);
+                setMoneyHabit(null);
             }
             if (excludeArea == "Corpo") {
-                setMindHabit(null);
+                setBodyHabit(null);
             }
             if (excludeArea == "Humor") {
-                setMindHabit(null);
+                setFunHabit(null);
             }
         }
         ChangeNavigationService.checkShowHome(1)
