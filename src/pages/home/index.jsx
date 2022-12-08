@@ -79,8 +79,14 @@ export default function Home( {route} ) {
         <View style={styles.container}>
             <ScrollView>
                 <View style={{alignItems: "center"}}>
-                    <Text style={styles.dailyChecks}> ❤️ {robotDaysLife} {robotDaysLife === "01" ? "dia" : "dias"}- ✔️ 80 checks</Text>
-                        <LifeStatus />
+                    <Text style={styles.dailyChecks}> 
+                        ❤️ {robotDaysLife} {robotDaysLife === "01" ? "dia" : "dias"}- ✔️ 80 checks</Text>
+                        <LifeStatus 
+                            mindHabit={mindHabit}
+                            moneyHabit={moneyHabit}
+                            bodyHabit={bodyHabit}
+                            funHabit={funHabit}
+                        />
                         <StatusBar
                             mindHabit={mindHabit?.progressBar}
                             moneyHabit={moneyHabit?.progressBar}
