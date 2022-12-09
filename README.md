@@ -27,8 +27,7 @@ O aplicativo **OneBitLife** é um projeto desenvolvido durante a **Semana Mobile
 <img align="left" alt="Javascript" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
 <img align="left" alt="React" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
 <img align="left" alt="SQLite" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg">
-  
-<img align="left" alt="SQLite" height="30" width="30" src="https://github.com/devicons/devicon/blob/master/icons/androidstudio/androidstudio-original.svg">
+ 
   
 </div>
 <br/><br/>
