@@ -1,5 +1,3 @@
-![semobile-bannernotion](https://user-images.githubusercontent.com/29529757/204114760-f461dab9-1e8c-434d-a8d2-7f8bc03f0549.jpg)
-
 # Aplicativo desenvolvido durante a Semana Mobile do OneBitCode
 
 
